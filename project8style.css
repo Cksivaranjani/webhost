@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    max-width: 720px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    justify-content: space-between;
+    position: relative;
+    padding-bottom: 26px;
+    /* background-image: url(../images/pattern-cupcakes-hand-drawn-pink-600nw-1666888534.webp); */
+}
+.container::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(68% at right 35%);
+    background: linear-gradient(135deg,#fd9bb0 10%,#f6416c 100%);
+    border-radius: 0 12px 12px 0;
+}
+.container .box1{
+    padding: 35px 5px 0 35px;
+}
+.box1 .details .topic{
+    font-size: 35px;
+    font-weight: 500;
+}
+.box1 .details p{
+    color: #737373;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.box1 .details .rating{
+    margin-top: 10px;
+    color: #fd19a9;
+}
+.box1 .details .price{
+    margin-top: 16px;
+}
+.details .price .discount{
+    font-size: 20px;
+    color: #737373;
+    margin: 10px 0px 4px 12px;
+    position: relative;
+}
+.price .discount::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100px;
+    background: #737373;
+    top: 45%;
+    left: -17px;
+}
+.details .price .pri{
+    color: #fd19a9;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.details .btn1{
+    margin-top: 55px;
+}
+.box1 .btn1 button{
+    outline: none;
+    background: #fd19a9;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.box1 .btn1 button:hover{
+    transform: scale(0.98);
+}
+.container .box2 .imgbox{
+    position: relative;
+    text-align: right;
+    right: 0;
+    bottom: 32px;
+}
+.container .box2 .img{
+    height: 390px;
+    width: 440px;
+}
+.box2 .img img{
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+}
+.box2 .info{
+    margin: 0 35px 0 0;
+}
+.box2 .info .name{
+    font-size: 22px;
+    font-weight: 550;
+    color: white;
+}
+.box2 .info .shipping{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    margin-top: 10px;
+}
+.box2 .info .btn2{
+    margin: 17px 0;
+}
+.box2 .info .btn2 button{
+    outline: none;
+    border: 1px solid #fff;
+    padding: 8px 16px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 6px;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+}
